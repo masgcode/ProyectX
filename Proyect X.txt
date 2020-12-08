@@ -1,0 +1,35 @@
+Proyecto X
+
+Objetivos:
+Una aplicación web para mantener registros de mis gastos.
+
+Datos a registrar:
+costo
+fecha
+empresa
+productos
+en linea/presencial
+
+Costo:
+- Campo libre.
+- Max 10.
+- Entero.
+
+Fecha:
+- Fecha actual al iniciar.
+- Selector de fecha por medio de un calendario.
+
+Empresa:
+- Campo libre.
+- Maxx 100.
+- Tipo texto.
+
+Productos:
+- Registrar varios.
+- Campo libre.
+- Max 100.
+- Tipo texto.
+
+En linea/presencial:
+- Selector de en linea o presencial.
+- Solo dos elementos.
