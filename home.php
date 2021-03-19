@@ -6,14 +6,36 @@
     <meta name="author" content="Michael Salas">
     <title>Home</title>
 
+    <!-- FONTAWESOME -->
+    <script src="https://kit.fontawesome.com/f10a5c28e4.js" crossorigin="anonymous"></script>
+
     <!-- CSS -->
     <link rel="stylesheet" href="vista/css/home.css">
     <link rel="stylesheet" href="vista/css/tabla.css">
     <link rel="stylesheet" href="vista/css/dashboard.css">
 
+    <!-- JS -->
+    <script src="./vista/js/home.js"></script>
+
 </head>
 <body>
-    
+
+    <div id="contenedor-preloader">
+        <div class="multi-spinner-container">
+            <div class="multi-spinner">
+                <div class="multi-spinner">
+                    <div class="multi-spinner">
+                        <div class="multi-spinner">
+                            <div class="multi-spinner">
+                                <div class="multi-spinner"> </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="contenedor">
 
         <!-- MENU IZQUIERDA -->
@@ -44,10 +66,15 @@
     
             <!-- TABLA -->
             <div id="contenedor-1">
-                <div id="encabezado-1"></div>
-                <div id="contenedor-2">
-                    <div id="encabezado-2">
+                <div id="encabezado-1">
+                <div id="encabezado-2">
                         <label>Colaboradores</label>
+                    </div>
+                </div>
+                <div id="contenedor-2">
+                    
+                    <div id="insertar">
+                        <label id="btn_insertar"><i class="fas fa-plus"></i> Nuevo</label>
                     </div>
                     <table>
                         <thead>
@@ -67,7 +94,7 @@
                                 <td data-label="Apellido Estudiante">buriticá</td>
                                 <td data-label="edad Estudiante">21</td>
                                 <td data-label="telefono">455754</td>
-                                <td data-label="telefono">Editar Eliminar</td>
+                                <td data-label="accion"><label class="editar">Editar</label><label class="eliminar">Eliminar</label></td>
                             </tr>
                             <tr>
                                 <td data-label="id Estudiante">2</td>
@@ -75,7 +102,7 @@
                                 <td data-label="Apellido Estudiante">castaño</td>
                                 <td data-label="edad Estudiante">18</td>
                                 <td data-label="telefono">455754</td>
-                                <td data-label="telefono">Editar Eliminar</td>
+                                <td data-label="accion"><label class="editar">Editar</label><label class="eliminar">Eliminar</label></td>
                             </tr>	    	
                             <tr>
                                 <td data-label="id Estudiante">3</td>
@@ -83,7 +110,7 @@
                                 <td data-label="Apellido Estudiante">lopez</td>
                                 <td data-label="edad Estudiante">16</td>
                                 <td data-label="telefono">455754</td>
-                                <td data-label="telefono">Editar Eliminar</td>
+                                <td data-label="accion"><label class="editar">Editar</label><label class="eliminar">Eliminar</label></td>
                             </tr>
                             <tr>
                                 <td data-label="id Estudiante">1</td>
@@ -91,7 +118,7 @@
                                 <td data-label="Apellido Estudiante">buriticá</td>
                                 <td data-label="edad Estudiante">21</td>
                                 <td data-label="telefono">455754</td>
-                                <td data-label="telefono">Editar Eliminar</td>
+                                <td data-label="accion"><label class="editar">Editar</label><label class="eliminar">Eliminar</label></td>
                             </tr>
                             <tr>
                                 <td data-label="id Estudiante">2</td>
@@ -99,7 +126,7 @@
                                 <td data-label="Apellido Estudiante">castaño</td>
                                 <td data-label="edad Estudiante">18</td>
                                 <td data-label="telefono">455754</td>
-                                <td data-label="telefono">Editar Eliminar</td>
+                                <td data-label="accion"><label class="editar">Editar</label><label class="eliminar">Eliminar</label></td>
                             </tr>	    	
                             <tr>
                                 <td data-label="id Estudiante">3</td>
@@ -107,7 +134,7 @@
                                 <td data-label="Apellido Estudiante">lopez</td>
                                 <td data-label="edad Estudiante">16</td>
                                 <td data-label="telefono">455754</td>
-                                <td data-label="telefono">Editar Eliminar</td>
+                                <td data-label="accion"><label class="editar">Editar</label><label class="eliminar">Eliminar</label></td>
                             </tr>
                     </table>
                 </div>
