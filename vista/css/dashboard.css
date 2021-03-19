@@ -1,0 +1,57 @@
+#navbar {
+    background: #424242;
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    color: white;
+    text-transform: uppercase;
+    text-align: right;
+    border-radius: 6px;
+}
+
+#navbar a {
+    text-decoration: none;
+    color: white;
+}
+
+
+/* MENU IZQUIERDA */
+
+.contenedor-menu {
+    width: 100%;
+    max-width: 290px;
+    background: #1c1c1c;
+    height: 100vh;
+}
+
+.etiqueta-usuario {
+    border-bottom: #424242 1px solid;
+    text-transform: uppercase;
+}
+
+.menu {
+    margin: auto;
+    width: 100%;
+    max-width: 240px;
+}
+
+.menu nav {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.menu a,
+.menu nav a {
+    display: block;
+    text-decoration: none;
+    padding: 20px;
+    color: #c7c7c7;
+    border-left: 5px solid transparent;
+}
+
+.menu nav a:hover {
+    border-left: 5px solid #c7c7c7;
+    background: #424242;
+    padding-left: 22px;
+    border-radius: 6px;
+}
