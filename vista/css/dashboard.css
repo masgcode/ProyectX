@@ -1,6 +1,6 @@
 /* MENU SUPERIOR */
 
-#navbar {
+.navbar {
     background: #424242;
     width: 100%;
     padding-top: 30px;
@@ -8,8 +8,6 @@
     color: white;
     text-transform: uppercase;
     text-align: right;
-    border-bottom-left-radius: 6px;
-    border-bottom-right-radius: 6px;
 }
 
 #navbar a {
@@ -21,41 +19,53 @@
 /* MENU IZQUIERDA */
 
 .contenedor-menu {
-    width: 100%;
-    max-width: 290px;
     background: #1c1c1c;
+    width: 334px;
+    min-width: 334px;
     height: 100vh;
 }
 
-.etiqueta-usuario {
-    border-bottom: #424242 1px solid;
-    text-transform: uppercase;
-}
-
-.menu {
-    margin: auto;
-    width: 100%;
-    max-width: 240px;
-}
-
-.menu nav {
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
-.menu a,
-.menu nav a {
-    display: block;
+.item a {
+    display: flex;
     text-decoration: none;
-    padding: 20px;
-    color: #c7c7c7;
-    border-left: 5px solid transparent;
+    color: white;
+    font-size: 20px;
+    margin-left: 10px;
+    padding: 15px;
+    border-left: 5px solid #1c1c1c;
 }
 
-.menu nav a:hover {
-    border-left: 5px solid #c7c7c7;
+.item a:hover {
     background: #424242;
-    padding-left: 22px;
+    border-left: 5px solid #c7c7c7;
     border-radius: 6px;
-    box-shadow: 0px 4px 12px -4px #424242;
+}
+
+.item a:first-child:hover {
+    border-left: 5px solid #c7c7c7;
+    border-bottom: 6px;
+    border-top: 0px;
+    border-radius: 0%;
+    border-bottom-right-radius: 6px;
+    border-bottom-left-radius: 6px;
+}
+
+.icono {
+    width: 50px;
+}
+
+.titulo {
+    max-width: 250px;
+}
+
+@media only screen and (max-width: 1200px) {
+    .contenedor {
+        width: 80px;
+    }
+    .contenedor-menu {
+        min-width: 80px;
+    }
+    .titulo {
+        display: none;
+    }
 }

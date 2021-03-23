@@ -20,6 +20,7 @@
 </head>
 <body>
 
+    <!-- LOADER SPPINER -->
     <div id="contenedor-preloader">
         <div class="multi-spinner-container">
             <div class="multi-spinner">
@@ -35,22 +36,41 @@
             </div>
         </div>
     </div>
+    <!-- LOADER SPPINER -->
 
     <div class="contenedor">
 
         <!-- MENU IZQUIERDA -->
         <div class="contenedor-menu">
-            <div class="menu">
-            <a class="etiqueta-usuario" href="#">Inicio</a>
-                <nav>
-                    <a href="#">Entradas</a>
-                    <a href="#">Cuarto Limpio</a>
-                    <a href="#">Cuarto Sucio</a>
-                    <a href="#">Proceso Termico</a>
-                    <a href="#">Paletizado</a>
-                    <a href="#">Bodega</a>
-                    <a href="#">Productividad</a>
-                </nav>
+            <div class="item">
+                <a href="#">
+                    <div class="icono"><i class="fas fa-bars"></i></div>
+                    <div class="titulo">Inicio</div>
+                </a>
+                <a href="#">
+                    <div class="icono"><i class="fas fa-box"></i></div>
+                    <div class="titulo">Lote de materiales</div>
+                </a>
+                <a href="#">
+                    <div class="icono"><i class="fas fa-boxes"></i></div>
+                    <div class="titulo">Ingreso de palmito</div>
+                </a>
+                <a href="#">
+                    <div class="icono"><i class="fas fa-burn"></i></div>
+                    <div class="titulo">Consumo de materiales</div>
+                </a>
+                <a href="#">
+                    <div class="icono"><i class="fas fa-chart-bar"></i></div>
+                    <div class="titulo">Productividad</div>
+                </a>
+                <a href="#">
+                    <div class="icono"><i class="fas fa-industry"></i></div>
+                    <div class="titulo">Esterelizacion</div>
+                </a>
+                <a href="#">
+                    <div class="icono"><i class="fas fa-ruler"></i></div>
+                    <div class="titulo">Salidas de productos</div>
+                </a>
             </div>
         </div>
         <!-- MENU IZQUIERDA -->
@@ -58,20 +78,20 @@
         <div class="subcontenedor">
 
             <!-- MENU SUPERIOR -->
-            <div id="navbar">
-                <a href="#"><?php echo $_SESSION['usuario']; ?></a>
+            <div class="navbar">
+                <a href="#"><i class="fas fa-user-circle"></i> <?php echo $_SESSION['usuario']; ?></a>
                 <a href="datos/logout.php">Cerrar sesión</a>
             </div>
             <!-- MENU SUPERIOR -->
     
             <!-- TABLA -->
-            <div id="contenedor-1">
-                <div id="encabezado-1">
-                <div id="encabezado-2">
+            <div class="contenedor-tabla">
+                <div class="encabezado-off">
+                    <div class="encabezado-on">
                         <label>Colaboradores</label>
                     </div>
                 </div>
-                <div id="contenedor-2">
+                <div class="sub-contenedor-tabla">
                     
                     <div id="insertar">
                         <label id="btn_insertar"><i class="fas fa-plus"></i> Nuevo</label>
@@ -94,7 +114,7 @@
                                 <td data-label="Apellido Estudiante">buriticá</td>
                                 <td data-label="edad Estudiante">21</td>
                                 <td data-label="telefono">455754</td>
-                                <td data-label="accion"><label class="editar">Editar</label><label class="eliminar">Eliminar</label></td>
+                                <td data-label="accion"><label class="editar"> <i class="far fa-edit"></i> Editar</label><label class="eliminar">Eliminar <i class="far fa-trash-alt"></i></label></td>
                             </tr>
                             <tr>
                                 <td data-label="id Estudiante">2</td>
@@ -102,7 +122,7 @@
                                 <td data-label="Apellido Estudiante">castaño</td>
                                 <td data-label="edad Estudiante">18</td>
                                 <td data-label="telefono">455754</td>
-                                <td data-label="accion"><label class="editar">Editar</label><label class="eliminar">Eliminar</label></td>
+                                <td data-label="accion"><label class="editar"> <i class="far fa-edit"></i> Editar</label><label class="eliminar">Eliminar <i class="far fa-trash-alt"></i></label></td>
                             </tr>	    	
                             <tr>
                                 <td data-label="id Estudiante">3</td>
@@ -110,7 +130,7 @@
                                 <td data-label="Apellido Estudiante">lopez</td>
                                 <td data-label="edad Estudiante">16</td>
                                 <td data-label="telefono">455754</td>
-                                <td data-label="accion"><label class="editar">Editar</label><label class="eliminar">Eliminar</label></td>
+                                <td data-label="accion"><label class="editar"> <i class="far fa-edit"></i> Editar</label><label class="eliminar">Eliminar <i class="far fa-trash-alt"></i></label></td>
                             </tr>
                             <tr>
                                 <td data-label="id Estudiante">1</td>
@@ -118,7 +138,7 @@
                                 <td data-label="Apellido Estudiante">buriticá</td>
                                 <td data-label="edad Estudiante">21</td>
                                 <td data-label="telefono">455754</td>
-                                <td data-label="accion"><label class="editar">Editar</label><label class="eliminar">Eliminar</label></td>
+                                <td data-label="accion"><label class="editar"> <i class="far fa-edit"></i> Editar</label><label class="eliminar">Eliminar <i class="far fa-trash-alt"></i></label></td>
                             </tr>
                             <tr>
                                 <td data-label="id Estudiante">2</td>
@@ -126,7 +146,7 @@
                                 <td data-label="Apellido Estudiante">castaño</td>
                                 <td data-label="edad Estudiante">18</td>
                                 <td data-label="telefono">455754</td>
-                                <td data-label="accion"><label class="editar">Editar</label><label class="eliminar">Eliminar</label></td>
+                                <td data-label="accion"><label class="editar"> <i class="far fa-edit"></i> Editar</label><label class="eliminar">Eliminar <i class="far fa-trash-alt"></i></label></td>
                             </tr>	    	
                             <tr>
                                 <td data-label="id Estudiante">3</td>
@@ -134,7 +154,7 @@
                                 <td data-label="Apellido Estudiante">lopez</td>
                                 <td data-label="edad Estudiante">16</td>
                                 <td data-label="telefono">455754</td>
-                                <td data-label="accion"><label class="editar">Editar</label><label class="eliminar">Eliminar</label></td>
+                                <td data-label="accion"><label class="editar"> <i class="far fa-edit"></i> Editar</label><label class="eliminar">Eliminar <i class="far fa-trash-alt"></i></label></td>
                             </tr>
                     </table>
                 </div>
