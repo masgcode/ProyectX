@@ -16,10 +16,15 @@ class Conexion
         // Para servidor local.
         $this->isActive = false;
         $this->server = "localhost"; // Server local de michael.
-        //$this->server = "127.0.0.1:33065"; // Server local de la kile y angie.
         $this->user = "root";
         $this->password = "";
         $this->db = "proyectox";
+        /*
+        $this->server = "localhost"; // Server local de michael.
+        $this->user = "id16420456_michael";
+        $this->password = "AmX@VGr1LpeXb$4L";
+        $this->db = "id16420456_proyectox";
+        */
     }
 
     // metodo de conexion.

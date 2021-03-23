@@ -1,0 +1,142 @@
+.contenedor-tabla {
+    margin: auto;
+    margin-top: 50px;
+    width: 98%;
+}
+
+.sub-contenedor-tabla {
+    background: #424242;
+    border-radius: 6px;
+    padding-top: 50px;
+    box-shadow: 0px 4px 15px -1px #070707;
+}
+
+.encabezado-off {
+    margin: 0 auto;
+    width: 100%;
+    height: 35px;
+    position: relative;
+}
+
+.encabezado-on {
+    text-align: left;
+    background: #3398f0;
+    color: white;
+    font-size: 22px;
+    padding: 12px;
+    border-radius: 6px;
+    width: 96%;
+    margin: 0 auto;
+    height: 50px;
+    box-shadow: 0px 4px 12px -4px #00A2F9;
+}
+
+
+/* TABLA */
+
+table thead th {
+    color: #2874ac;
+}
+
+table {
+    width: 98%;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+table tr {
+    padding: 5px;
+    color: white;
+}
+
+table tr:nth-child(even) {
+    background-color: #3f3f3f;
+}
+
+table td,
+table th {
+    padding: 15px;
+    text-align: left;
+    font-size: 17px;
+}
+
+table th {
+    text-transform: uppercase;
+    font-family: 18px;
+}
+
+tbody tr {
+    border-top: #ccc 1px outset;
+}
+
+table thead tr th:last-child,
+table td:last-child {
+    text-align: right;
+}
+
+table tbody tr:hover {
+    background: #616161;
+}
+
+
+/* BOTON INSERTAR */
+
+#insertar {
+    margin-top: 15px;
+    margin-left: 17px;
+}
+
+#btn_insertar {
+    background: #61d862;
+    color: white;
+    padding: 12px;
+    border-radius: 4px;
+    border: 1px solid #61d862;
+    box-shadow: 0px 5px 10px -7px #61D862;
+}
+
+#btn_insertar:hover {
+    cursor: pointer;
+    background: white;
+    color: #61d862;
+    border: 1px solid #61d862;
+    box-shadow: 0px 6px 12px -5px #61D862;
+}
+
+
+/* EDITAR Y ELIMINAR */
+
+.editar {
+    padding: 10px;
+    background: #3398f0;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border: 1px solid #3398f0;
+    box-shadow: 0px 3px 8px -3px #00A2F9;
+}
+
+.editar:hover {
+    padding: 10px;
+    cursor: pointer;
+    background: white;
+    color: #3398f0;
+    border: 1px solid #3398f0;
+    box-shadow: 0px 4px 12px -4px #00A2F9;
+}
+
+.eliminar {
+    padding: 10px;
+    background: #ff625b;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border: 1px solid #ff625b;
+    box-shadow: 0px 3px 8px -3px #ff625b;
+}
+
+.eliminar:hover {
+    cursor: pointer;
+    background: white;
+    color: #ff625b;
+    border: 1px solid #ff625b;
+    box-shadow: 0px 4px 12px -4px #ff625b;
+}

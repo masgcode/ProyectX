@@ -1,0 +1,71 @@
+@import 'https://fonts.googleapis.com/css?family=Montserrat:300,400,700';
+* {
+    font-family: Montserrat, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #303030;
+}
+
+.contenedor {
+    display: flex;
+}
+
+.subcontenedor {
+    width: 100%;
+    height: 100vh;
+}
+
+#contenedor-preloader {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+/* LOADER */
+
+.multi-spinner-container {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    overflow: hidden;
+    left: 45%;
+    top: 35%;
+}
+
+.multi-spinner {
+    position: absolute;
+    width: calc(100% - 9.9px);
+    height: calc(100% - 9.9px);
+    border: 5px solid transparent;
+    border-top-color: #3398f0;
+    border-radius: 50%;
+    -webkit-animation: spin 5s cubic-bezier(0.17, 0.49, 0.96, 0.76) infinite;
+    animation: spin 5s cubic-bezier(0.17, 0.49, 0.96, 0.76) infinite;
+}
+
+@-webkit-keyframes spin {
+    from {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    from {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}

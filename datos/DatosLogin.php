@@ -9,6 +9,7 @@ class DatosLogin extends Conexion
     {
         $conexion = $this->getConexion();
         if ($conexion != null) {
+            
             $query = "call iniciar_sesion(?)";
             $statement = $conexion->prepare($query);
             $datos = [
@@ -17,7 +18,9 @@ class DatosLogin extends Conexion
             $statement->execute($datos);
             $conexion = null;
             
-            return $statement->fetch()[0];;
+            return $statement->fetch()[0];
+            
+            return 1;
         }
     }
 }
