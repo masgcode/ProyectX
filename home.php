@@ -1,168 +1,82 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Michael Salas">
-    <title>Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Inicio</title>
 
-    <!-- FONTAWESOME -->
-    <script src="https://kit.fontawesome.com/f10a5c28e4.js" crossorigin="anonymous"></script>
-
-    <!-- CSS -->
-    <link rel="stylesheet" href="vista/css/home.css">
-    <link rel="stylesheet" href="vista/css/tabla.css">
-    <link rel="stylesheet" href="vista/css/dashboard.css">
-
-    <!-- JS -->
-    <script src="./vista/js/home.js"></script>
-
+    <!-- <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"> -->
+    <link rel="stylesheet" href="vista/css/main.css">
 </head>
+
 <body>
 
-    <!-- LOADER SPPINER -->
-    <div id="contenedor-preloader">
-        <div class="multi-spinner-container">
-            <div class="multi-spinner">
-                <div class="multi-spinner">
-                    <div class="multi-spinner">
-                        <div class="multi-spinner">
-                            <div class="multi-spinner">
-                                <div class="multi-spinner"> </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- LOADER SPPINER -->
-
-    <div class="contenedor">
-
-        <!-- MENU IZQUIERDA -->
-        <div class="contenedor-menu">
-            <div class="item">
-                <a href="#">
-                    <div class="icono"><i class="fas fa-bars"></i></div>
-                    <div class="titulo">Inicio</div>
-                </a>
-                <a href="#">
-                    <div class="icono"><i class="fas fa-box"></i></div>
-                    <div class="titulo">Lote de materiales</div>
-                </a>
-                <a href="#">
-                    <div class="icono"><i class="fas fa-boxes"></i></div>
-                    <div class="titulo">Ingreso de palmito</div>
-                </a>
-                <a href="#">
-                    <div class="icono"><i class="fas fa-burn"></i></div>
-                    <div class="titulo">Consumo de materiales</div>
-                </a>
-                <a href="#">
-                    <div class="icono"><i class="fas fa-chart-bar"></i></div>
-                    <div class="titulo">Productividad</div>
-                </a>
-                <a href="#">
-                    <div class="icono"><i class="fas fa-industry"></i></div>
-                    <div class="titulo">Esterelizacion</div>
-                </a>
-                <a href="#">
-                    <div class="icono"><i class="fas fa-ruler"></i></div>
-                    <div class="titulo">Salidas de productos</div>
-                </a>
-            </div>
-        </div>
-        <!-- MENU IZQUIERDA -->
-
-        <div class="subcontenedor">
-
-            <!-- MENU SUPERIOR -->
-            <div class="navbar">
-                <a href="#"><i class="fas fa-user-circle"></i> <?php echo $_SESSION['usuario']; ?></a>
-                <a href="datos/logout.php">Cerrar sesión</a>
-            </div>
-            <!-- MENU SUPERIOR -->
+    <input class="oculto" type="checkbox" id="nav-toggle">
     
-            <!-- TABLA -->
-            <div class="contenedor-tabla">
-                <div class="encabezado-off">
-                    <div class="encabezado-on">
-                        <label>Colaboradores</label>
-                    </div>
-                </div>
-                <div class="sub-contenedor-tabla">
-                    
-                    <div id="insertar">
-                        <label id="btn_insertar"><i class="fas fa-plus"></i> Nuevo</label>
-                    </div>
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>estudiante</th>
-                                <th>Nombre</th>
-                                <th>Apellido</th>
-                                <th>Edad</th>
-                                <th>Teléfono</th>
-                                <th>Accion</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td data-label="id Estudiante">1</td>
-                                <td data-label="nombre Estudiante">juan</td>
-                                <td data-label="Apellido Estudiante">buriticá</td>
-                                <td data-label="edad Estudiante">21</td>
-                                <td data-label="telefono">455754</td>
-                                <td data-label="accion"><label class="editar"> <i class="far fa-edit"></i> Editar</label><label class="eliminar">Eliminar <i class="far fa-trash-alt"></i></label></td>
-                            </tr>
-                            <tr>
-                                <td data-label="id Estudiante">2</td>
-                                <td data-label="nombre Estudiante">jose</td>
-                                <td data-label="Apellido Estudiante">castaño</td>
-                                <td data-label="edad Estudiante">18</td>
-                                <td data-label="telefono">455754</td>
-                                <td data-label="accion"><label class="editar"> <i class="far fa-edit"></i> Editar</label><label class="eliminar">Eliminar <i class="far fa-trash-alt"></i></label></td>
-                            </tr>	    	
-                            <tr>
-                                <td data-label="id Estudiante">3</td>
-                                <td data-label="nombre Estudiante">fernado</td>
-                                <td data-label="Apellido Estudiante">lopez</td>
-                                <td data-label="edad Estudiante">16</td>
-                                <td data-label="telefono">455754</td>
-                                <td data-label="accion"><label class="editar"> <i class="far fa-edit"></i> Editar</label><label class="eliminar">Eliminar <i class="far fa-trash-alt"></i></label></td>
-                            </tr>
-                            <tr>
-                                <td data-label="id Estudiante">1</td>
-                                <td data-label="nombre Estudiante">juan</td>
-                                <td data-label="Apellido Estudiante">buriticá</td>
-                                <td data-label="edad Estudiante">21</td>
-                                <td data-label="telefono">455754</td>
-                                <td data-label="accion"><label class="editar"> <i class="far fa-edit"></i> Editar</label><label class="eliminar">Eliminar <i class="far fa-trash-alt"></i></label></td>
-                            </tr>
-                            <tr>
-                                <td data-label="id Estudiante">2</td>
-                                <td data-label="nombre Estudiante">jose</td>
-                                <td data-label="Apellido Estudiante">castaño</td>
-                                <td data-label="edad Estudiante">18</td>
-                                <td data-label="telefono">455754</td>
-                                <td data-label="accion"><label class="editar"> <i class="far fa-edit"></i> Editar</label><label class="eliminar">Eliminar <i class="far fa-trash-alt"></i></label></td>
-                            </tr>	    	
-                            <tr>
-                                <td data-label="id Estudiante">3</td>
-                                <td data-label="nombre Estudiante">fernado</td>
-                                <td data-label="Apellido Estudiante">lopez</td>
-                                <td data-label="edad Estudiante">16</td>
-                                <td data-label="telefono">455754</td>
-                                <td data-label="accion"><label class="editar"> <i class="far fa-edit"></i> Editar</label><label class="eliminar">Eliminar <i class="far fa-trash-alt"></i></label></td>
-                            </tr>
-                    </table>
+
+    <div class="sidebar">
+
+        <div class="sidebar-brand">
+            <h2>
+                <span class="lab la-accusoft"></span>
+                <span> Michael Salas</span>
+            </h2>
+        </div>
+
+        <div class="sidebar-menu">
+            <ul>
+                <li>
+                    <a href="#" id="nav-inicio" class="active">
+                        <span class="las la-igloo"></span>
+                        <span> Inicio</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" id="nav-proyectos">
+                        <span class="las la-users"></span>
+                        <span> Proyectos</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+
+    <div class="main-content">
+
+        <header>
+
+            <h2>
+                <label for="nav-toggle">
+                    <span class="las la-bars"></span>
+                </label> Inicio
+            </h2>
+
+            <div class="user-wrapper">
+                <img src="vista/css/img/2.jpg" width="30px" height="30px" alt="">
+                <div>
+                    <h4>Michael Salas</h4>
                 </div>
             </div>
-            <!-- TABLA -->
 
-        </div>
+        </header>
+
+        <main>
+
+            <div id="app" class="cards"></div>
+
+            <div id="tabla" class="recent-grid">
+                
+            </div>
+
+        </main>
     </div>
-    
+
+    <script src="js/home.js"></script>
+    <script src="js/ajax.js"></script>
+    <script src="js/inicio.js"></script>
+    <script src="js/proyectos.js"></script>
 </body>
+
 </html>
